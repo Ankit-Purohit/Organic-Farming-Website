@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+       *{
+           margin:0px;
+           padding:0px;
+           box-sizing: border-box;
+           font-family: "Raleway",sans-serif;
+         
+       }
+       body{
+        background-color: #EAECED;
+
+       }
+       .con{
+           margin:0 auto;
+           width:100%;
+           background-color: antiquewhite;
+           
+       }
+       .container{
+           flex-wrap: wrap;
+       }
+  
+        .product__{
+            height:400px;
+            width:300px;
+     
+            margin:10px;
+            /* border:2px solid red; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+        .p__image{
+            height:200px;
+            width:100%;
+            /* border:2px solid green; */
+            overflow: hidden;
+        }
+        .img{
+            height:100%;
+            width:100%;
+        }
+        .img:hover{
+          transform: scaleX(103%) scaleY(103%);
+            /* height:202px; */
+        }
+        .p__description{
+            height:50%;
+            width:100%;
+            margin-top:30px;
+            /* border:2px solid red; */
+            text-align: center;
+            /* background-color: chartreuse; */
+
+        }
+        .btn{
+            width:100px;
+            height:30px;
+            border-radius: 25px;
+            margin-top: 10px;
+            cursor:pointer;
+            background-color:green ;
+        }
+        .flex{
+            display: flex;
+        }
+        .item-center{
+            justify-content: center;
+        }
+        .justify-between{
+            justify-content: space-between;
+        }
+        .justify-around{
+            justify-content: space-around;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+    
+        .p__logo{
+            height:100px;
+            /* margin:10px 0px 0px; */
+            text-align: center;
+            background-color: rgba(33, 131, 50, 0.777);
+            color:white;
+            
+            
+
+        }
+        .p__logo h1{
+            color:white;
+            /* border:2px solid red; */
+            padding:10px;
+        }
+
+        @media (max-width:500px){
+           .flex{
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+           }
+        }
+      
+.pop-up{
+    width:500px;
+    height:500px;
+    background-color: brown;
+    border:2px solid red;
+}
+
+    

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HOME</title>
+    
+</head>
+<body>
+   
+    <header class="header">
+        <img src="images/logo1.png" alt="logo" class="logo">
+            <ul class="navbar-lists">
+                <li><a class="navbar-link" href="#">Home</a></li>
+                <li><a class="navbar-link" href="tutorial.html">Tutorial</a></li>
+                <li><a  class="navbar-link"  href="/prod/product.html">Product</a></li>
+                <li><a class="navbar-link"  href="whyoragic.html">Why Organic</a></li>
+                <li id="navbar-signin"><a class="navbar-link"  href="/login/index.html">Sign In</a></li>
+
+                <li onclick="logouted()" id="navbar-logout"><a class="navbar-link"  href="#" onclick="logOut()">Logout</a></li>
+            </ul>
+            <div onclick="changeBurger()" class="navbar-burger nav-burger">
+                <div class="nav-1"></div>
+                <div class="nav-2"></div>
+                <div class="nav-3"></div>
+            </div>
+    </header>
+    <!-- navbar-hidden -->
+    <div id="navbarhidder" class="none" >
+        <ul>
+            <li><a class="navbar-link" href="#">Home</a></li>
+            <li><a class="navbar-link" href="tutorial.html">Tutorial</a></li>
+            <li><a class="navbar-link"  href="prod/product.html">Product</a></li>
+            <li><a class="navbar-link"  href="whyoragic.html">Why Oraganic</a></li>
+            <li><a class="navbar-link"  href="/login/index.html">Sign-In</a></li>
+            <!-- <li onclick="logouted()" id="navbar-logout"><a class="navbar-link"  href="#" onclick="logOut()">Logout</a></li> -->
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <div onclick="gotoLeft()" class="slide-left"></div>
+        <div onclick="gotoRight()" class="slide-right"></div>
+        <img 
+        class="img-1"
+        id="carosel"
+        src="images/img1.jpg"
+        alt="organi-logo"
+        />
+    </div>
+
+    <!-- main content -->
+
+    <div class="contanier-1">
+        <div class="contanier-1__head">
+            <h1>What is Organic ?</h1>
+        </div>
+        <div class="contanier-1__body">
+            <p>organic farming, agricultural system that uses ecologically based pest controls and biological fertilizers derived largely from animal and plant wastes and nitrogen-fixing cover crops. Modern organic farming was developed as a response to the environmental harm caused by the use of chemical pesticides and synthetic fertilizers in conventional agriculture, and it has numerous ecological benefits.
+            Compared with conventional agriculture, organic farming uses fewer pesticides, reduces soil erosion, decreases nitrate leaching into groundwater and surface water, and recycles animal wastes back into the farm.</p>
+        </div>
+    </div>
+    <div class="contanier-2">
+        <div class="contanier-2__head">
+            <h1>How to start in Uttrakhand ?</h1>
+        </div>
+        <div class="contanier-2__body">
+            <div class="contanier-2__innner1">
+                <div class="contanier-2__first">
+                    <img src="https://www.organic-center.org/sites/default/files/styles/apb_feature_box/public/apb/feature-box/soilhands2.jpg" alt=""/>
+                </div>
+                <div class="contanier-2__second">
+                    <h3>Healthy Soil</h3>
+                </div>
+                <div class="contanier-2__third">
+                    <p>Organic farming starts with healthy soil. Farmers put nutrients back into the earth using sustainable methods like crop rotation, cover crops, hand weeding, mulch, manure and compost. Healthy soil grows more nutritious food and is able to store carbon dioxide helping to combat climate change.</p>
+                </div>
+                
+            </div>
+            <div class="contanier-2__innner2">
+                <div class="contanier-2__innner1">
+                <div class="contanier-2__first">
+                    <img src="or-2.jpeg" alt=""/>
+                </div>
+                <div class="contanier-2__second">
+                    <h3>Healthy Soil</h3>
+                </div>
+                <div class="contanier-2__third">
+                    <p>Organic farming starts with healthy soil. Farmers put nutrients back into the earth using sustainable methods like crop rotation, cover crops, hand weeding, mulch, manure and compost. Healthy soil grows more nutritious food and is able to store carbon dioxide helping to combat climate change.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contanier-2__innner1">
+                <div class="contanier-2__innner3">
+            <div class="contanier-2__first">
+                <img src="or-1.jpg" alt=""/>
+            </div>
+            <div class="contanier-2__second">
+                <h3>Healthy Soil</h3>
+            </div>
+            <div class="contanier-2__third">
+                <p>Organic farming starts with healthy soil. Farmers put nutrients back into the earth using sustainable methods like crop rotation, cover crops, hand weeding, mulch, manure and compost. Healthy soil grows more nutritious food and is able to store carbon dioxide helping to combat climate change.</p>
+            </div>
+        </div>
+        
+    
+    
+    </div>
+    <div class="container-3">
+        <div class="container-3__inner">
+            <div class="container-3__inner__first">
+                <h1>Testimonials</h1>
+            </div>
+            <div class="container-3__inner__second">
+                <div class="container-3__inner__second-inner">
+                    <div class="container-3__inner__second1">
+                        <p id="testimonial__1">Allan Fernandis</p>
+                    </div>
+                    <div class="container-3__inner__second2">
+                        <p id="testimonial__2">Mumbai</p>
+                    </div>
+                    <div class="container-3__inner__second3">
+                        <p id="testimonial__3">
+                            I have been a regular customer of Organic Tattva. The masala tea from Organic Tattva is one of my favorite products. I start my day with the masala tea as it energizes me and prepares me for my busy day.t
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Main content End -->
+    <!-- footer -->
+     <div class="footer">
+        <div class="f1 f1_first">
+            <img id="footer-img" src="images/logo1.png">
+            <div class="f1-content">
+            <p>Copyright&#169 2022; </p>
+            <p>All right Reserved</p>
+            </div>
+        </div>
+        <div class="f1">
+            <h2>QUICK MENU</h2>
+
+            <ul class="">
+                <li><a class="navbar-link" href="#">Home</a></li>
+                <li><a class="navbar-link" href="#">Benifit</a></li>
+                <li><a class="navbar-link"  href="#">Product</a></li>
+                <li><a class="navbar-link"  href="#">Future</a></li>
+                <li><a class="navbar-link"  href="#">Why Organic</a></li>
+            </ul>
+            <button id="f-btn" ><a href="#">SUPPORT OUR WORK</a></button>
+
+        </div>
+        <div class="f1">
+            <h2>CONTACT US</h2>
+             <p>The Organic Center
+                The Hall of the States,
+                444 N. Capitol St. NW,
+                Suite 445A, Washington D.C.
+                20001</p>
+            <h2>CONNECT WITH US</h2>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+
+        </div>
+
+    </div>      
+    </div>
+    <!-- start -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- end -->
+        <script src="script/auth.js"></script>
+        <script src="script/script.js" ></script>  
+</body>
+</html>

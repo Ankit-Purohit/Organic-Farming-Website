@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+            background: url('reg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+        .register{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 230px auto;
+            width: 400px;
+            height: 400px;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+        }
+        input{
+            margin: 10px 0px;
+            /* border:1px solid red; */
+        }
+        button{
+            padding: 10px 40px;
+            margin: 30px 0px;
+            background-color: rgb(157, 157, 235);
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .label__login{
+            position: relative;
+            left: 0px;
+            top: -75px;
+            font-size: 30px;
+            background-color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .inner{
+            /* border:2px solid red; */
+            width:100%;
+            text-align: center;
+        }
+        input{
+            /* border:1px solid red; */
+            display: block;
+            position: relative;
+            width:50%;
+            margin:0px auto;
+            padding:0.5rem 0.5rem;
+            /* color:white; */
+            /* margin-left:20px; */
+            /* left:20px; */
+        }
+        .la{
+            color:white;
+            font-size: 20px;
+        }
+        a{
+            /* color:green; */
+            color:violet;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <label class="label__login">REGISTER:</label>
+        <div class="inner">
+            <label class="la" for="username">Username:</label>
+            <input type="text" id="username"/>
+        </div>
+        <div class="inner">
+            <label class="la"  for="email">Email:</label>
+            <input type="email" id="email"/>
+        </div>
+        <div class="inner">
+            <label class="la"  for="pass">Password:</label>
+            <input type="password" id="pass" />
+        </div>
+        <button onclick="createUser()">Register</button>
+
+        <a href="/login">Already Sign In?</a>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../script/auth.js"></script>
+</body>
+</html>
